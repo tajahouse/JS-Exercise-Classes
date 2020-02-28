@@ -177,13 +177,13 @@ class Student extends Lambdasian{
 }
 listSubjects(){
   return `Loving ${this.favSubjects} `
-}
-PRAssignment(subject){
-returns `${student.name} has submitted a PR for ${subject}`
-}
+};
+PRAssignment(subject, student){
+return `${this.name} has submitted a PR for ${subject}`
+};
 sprintChallenge(subject){
-returns `${student.name} has begun sprint challenge on ${subject}`
-}
+return `${this.name} has begun sprint challenge on ${subject}`
+};
 
 }
 
@@ -206,11 +206,11 @@ constructor(attr){
   this.gradClassName = attr.gradClassName;
   this.favInstructor = attr.favInstructor;
 }
-standup(slack){
-  returns `${this.name} announces to ${slack}, @channel standy times!`
+standUp(slack){
+  return `${this.name} announces to ${slack}, @channel standy times!`
 };
 debugsCode(student, subject){
-  returns `${this.name} debugs ${student.names}'s code on ${subject}`
+ return `${this.name} debugs ${student.name}'s code on ${subject}' `
 };
 }
 
